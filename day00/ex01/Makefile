@@ -1,4 +1,4 @@
-NAME = megaphone
+NAME = phonebook
 INPUT = $(wildcard ./*.cpp)
 CFLAGS	= -Wall -Wextra -Werror
 RM = rm -f

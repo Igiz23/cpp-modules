@@ -1,4 +1,4 @@
-NAME = megaphone
+NAME = account
 INPUT = $(wildcard ./*.cpp)
 CFLAGS	= -Wall -Wextra -Werror
 RM = rm -f
