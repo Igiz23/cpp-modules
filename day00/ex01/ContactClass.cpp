@@ -1,5 +1,4 @@
 #include "ContactClass.hpp"
-#include <iostream>
 
 Contact::Contact (void)
 {

@@ -1,13 +1,13 @@
-#ifndef PHONEBOOKCLASS_HPP
-# define PHONEBOOKCLASS_HPP
+#ifndef __PHONEBOOKCLASS_HPP_
+# define __PHONEBOOKCLASS_HPP_
 
 # include "ContactClass.hpp"
 # include <string>
-#include <iostream>
-#include <sstream>
+# include <iostream>
 
 class Phonebook
 {
+private:
 	int _index;
 	int _full;
 

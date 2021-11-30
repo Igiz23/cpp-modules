@@ -1,11 +1,12 @@
-#ifndef CONTACTCLASS_HPP
-# define CONTACTCLASS_HPP
+#ifndef __CONTACTCLASS_HPP_
+# define __CONTACTCLASS_HPP_
 
 # include <string>
 # include <iostream>
 
 class Contact
 {
+private:
 	std::string _first_name;
 	std::string _last_name;
 	std::string _nickname;
