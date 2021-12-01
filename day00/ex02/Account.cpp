@@ -35,7 +35,7 @@ int Account::checkAmount( void ) const
 Account::Account(int initial_deposit)
 {
 	_amount = initial_deposit;
-	_totalAmount += _amount;
+	_totalAmount += initial_deposit;
 	_accountIndex = _nbAccounts;
 	_nbAccounts++;
 	_nbDeposits = 0;

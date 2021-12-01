@@ -65,8 +65,6 @@ void Phonebook::add_new_contact()
 	}
 }
 
-int Phonebook::b = 10;
-
 void Phonebook::init_contacts()
 {
 	this->_contact[this->_index].set_first_name("");
