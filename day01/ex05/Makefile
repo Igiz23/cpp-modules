@@ -1,12 +1,12 @@
-SRC = main.cpp Zombie.cpp newZombie.cpp
+SRC = main.cpp Karen.cpp
 OBJ = ${SRC:.cpp=.o}
 CFLAGCS = -Wall -Wextra -Werror -std=c++98
 CC = clang++
-NAME = zombie
-HEADER = Zombie.hpp
+HEADER = Karen.hpp
+NAME = Karen_2_0
 
-%.o:		%.cpp ${HEADER}
-		$(CC) $(CFLAGCS) -c -o $@ $<
+%.o:	%.cpp $(HEADER)
+	$(CC) $(CFLAGCS) -c -o $@ $<
 
 all: $(NAME)
 

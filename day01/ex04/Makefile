@@ -1,11 +1,10 @@
-SRC = main.cpp Zombie.cpp newZombie.cpp
+SRC = main.cpp
 OBJ = ${SRC:.cpp=.o}
 CFLAGCS = -Wall -Wextra -Werror -std=c++98
 CC = clang++
-NAME = zombie
-HEADER = Zombie.hpp
+NAME = replace
 
-%.o:		%.cpp ${HEADER}
+%.o:		%.cpp
 		$(CC) $(CFLAGCS) -c -o $@ $<
 
 all: $(NAME)

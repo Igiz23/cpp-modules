@@ -1,9 +1,9 @@
-SRC = main.cpp Zombie.cpp newZombie.cpp
+SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OBJ = ${SRC:.cpp=.o}
 CFLAGCS = -Wall -Wextra -Werror -std=c++98
 CC = clang++
-NAME = zombie
-HEADER = Zombie.hpp
+NAME = violence
+HEADER = Weapon.hpp HumanA.hpp HumanB.hpp
 
 %.o:		%.cpp ${HEADER}
 		$(CC) $(CFLAGCS) -c -o $@ $<
