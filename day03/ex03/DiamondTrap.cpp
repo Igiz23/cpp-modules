@@ -26,7 +26,8 @@ DiamondTrap &DiamondTrap::operator = (DiamondTrap const &value) {
 }
 
 DiamondTrap::DiamondTrap(std::string const &name)
-: ClapTrap(name + "_clap_trap", 10, 10, 0), FragTrap(100, 30), ScavTrap(50), name(name) {
+: ClapTrap(name + "_clap_trap", 10, 10, 0),
+	FragTrap(100, 30), ScavTrap(50), name(name) {
 	std::cout <<  "DiamondTrap " << name << " warrior created" << std::endl;
 	std::cout << "Hitpoints: " << this->hitPoints << ", "
 	<< "Energy points: " << this->energyPoints << ", "

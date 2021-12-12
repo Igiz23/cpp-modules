@@ -16,7 +16,7 @@ public:
 	ClapTrap(std::string const &name);
 	ClapTrap(ClapTrap const &copy);
 	ClapTrap &operator =(ClapTrap const &value);
-	~ClapTrap();
+	virtual ~ClapTrap();
 
 	void attack(std::string const &target);
 	void takeDamage(unsigned int amount);
