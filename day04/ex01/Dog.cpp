@@ -6,7 +6,7 @@ Dog::Dog() : Animal("Dog") {
 }
 
 Dog::~Dog() {
-	delete this->DogBrain;
+	delete DogBrain;
 	std::cout << "Dog destroyed!" << std::endl;
 }
 
@@ -17,8 +17,9 @@ Dog::Dog(const Dog &copy) :Animal(copy) {
 }
 
 Dog &Dog::operator=(const Dog &source) {
+	std::cout << "Assignation operator called (Dog)" << std::endl;
 	this->type = source.type;
-	this->~Dog();
+	delete DogBrain;
 	this->DogBrain = new Brain(*source.DogBrain);
 	return (*this);
 }

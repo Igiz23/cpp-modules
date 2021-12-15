@@ -6,7 +6,7 @@ Cat::Cat() : Animal("CAT") {
 }
 
 Cat::~Cat() {
-	delete this->CatBrain;
+	delete CatBrain;
 	std::cout << "Cat destroyed!" << std::endl;
 }
 
@@ -17,9 +17,11 @@ Cat::Cat(const Cat &copy) :Animal(copy) {
 }
 
 Cat &Cat::operator=(const Cat &source) {
+	std::cout << "Assignation operator called (Cat)" << std::endl;
 	this->type = source.type;
-	this->~Cat();
+	delete CatBrain;
 	this->CatBrain = new Brain(*source.CatBrain);
+
 	return (*this);
 }
 

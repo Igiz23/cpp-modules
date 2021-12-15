@@ -2,7 +2,7 @@ SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
 OBJ = ${SRC:.cpp=.o}
 CFLAGCS = -Wall -Wextra -Werror -std=c++98
 CC = clang++
-NAME = Brain
+NAME = AbstractClasss
 HEADER = Animal.cpp Cat.hpp Dog.hpp Brain.hpp
 
 %.o:		%.cpp ${HEADER}
