@@ -1,9 +1,9 @@
-SRC = main.cpp Bureaucrat.cpp
+SRC = main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp
 OBJ = ${SRC:.cpp=.o}
 CFLAGCS = -Wall -Wextra -Werror -std=c++98
 CC = clang++
-NAME = Bureaucrat
-HEADER = Bureaucrat.hpp
+NAME = Tree
+HEADER = Bureaucrat.hpp Form.hpp ShrubberyCreationForm.hpp RobotomyRequestForm.hpp PresidentialPardonForm.hpp
 
 %.o:		%.cpp ${HEADER}
 		$(CC) $(CFLAGCS) -c -o $@ $<

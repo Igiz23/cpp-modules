@@ -1,11 +1,11 @@
-SRC = main.cpp Bureaucrat.cpp
+SRC = main.cpp A.cpp B.cpp C.cpp Base.cpp
 OBJ = ${SRC:.cpp=.o}
 CFLAGCS = -Wall -Wextra -Werror -std=c++98
 CC = clang++
-NAME = Bureaucrat
-HEADER = Bureaucrat.hpp
+NAME = Type
+HEADER = A.hpp B.hpp C.hpp Base.hpp
 
-%.o:		%.cpp ${HEADER}
+%.o:		%.cpp
 		$(CC) $(CFLAGCS) -c -o $@ $<
 
 all: $(NAME)

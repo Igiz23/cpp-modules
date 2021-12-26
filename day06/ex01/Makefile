@@ -1,11 +1,10 @@
-SRC = main.cpp Bureaucrat.cpp
+SRC = main.cpp
 OBJ = ${SRC:.cpp=.o}
 CFLAGCS = -Wall -Wextra -Werror -std=c++98
 CC = clang++
-NAME = Bureaucrat
-HEADER = Bureaucrat.hpp
+NAME = Serialize
 
-%.o:		%.cpp ${HEADER}
+%.o:		%.cpp
 		$(CC) $(CFLAGCS) -c -o $@ $<
 
 all: $(NAME)
