@@ -6,7 +6,7 @@
 /*   By: mreynold <mreynold@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/27 23:34:05 by mreynold          #+#    #+#             */
-/*   Updated: 2021/12/27 23:34:26 by mreynold         ###   ########.fr       */
+/*   Updated: 2021/12/27 23:46:52 by mreynold         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,11 @@ int main ( void ){
 		std::cout << b[i] << " " << std::flush;
 	std::cout << std::endl;
 
-	strings[0] = "One";
-	strings[1] = "Two";
-	strings[2] = "Three";
-	strings[3] = "Four";
-	strings[4] = "Five";
+	strings[0] = "First";
+	strings[1] = "Second";
+	strings[2] = "Third";
+	strings[3] = "Fourth";
+	strings[4] = "Fifth";
 
 	a = b;
 	b[3] = 5;
@@ -45,13 +45,13 @@ int main ( void ){
 
 	Array<int> c(b);
 	TT
-	bool proof = true;
+	bool check = true;
 	for(unsigned int i = 0; i < b.size(); i++) {
 		if (b[i] != c[i])
-			proof = false;
+			check = false;
 	}
-	if (proof)
-		std::cout << "True c is a complete copy of 'b'" << std::endl;
+	if (check)
+		std::cout << "True 'c' is a complete copy of 'b'" << std::endl;
 
 	TT
 	try {
@@ -60,6 +60,7 @@ int main ( void ){
 	}
 	catch (std::exception &ex) {
 		std::cout << "Out of allocated memory" << std::endl;
+		std::cout << ex.what() << std::endl;
 	}
 	return (0);
 }
